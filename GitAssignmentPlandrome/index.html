@@ -8,10 +8,23 @@
 
     <title>Assigement 1</title>
     <script>
-        $(document).ready(function() {
-            $('#rateMe1').mdbRate();
-        });
+        document.getElementById('myBtn').addEventListener('click', checkPaligndrom);
+        alert("19");
+        function checkPaligndrom()
+        {
+        alert("23");
+            let isPaligndrom = document.getElementById("paligndrmo");
+            let wordLength = isPaligndrom.length-1;
+            let temp = '';
+            for(i = wordLength; i >= 0; i--)
+            {
+            temp+=  isPaligndrom[i];
+            }
+            (temp == isPaligndrom) ? alert("Paligndrom") : alert ("Not Paligndrom");
+        }
+            
     </script>
+
     <style>
         body{
             padding: 2.5rem 1px;
@@ -61,7 +74,7 @@
         <div class="container banner">
             <div class="col-lg-12 col-12" >
                 <h1 class="text-center padding-top">Assignment 3</h1>
-                <h4 class="text-center">Palandrome</h4>
+                <h4 class="text-center">Palindrome</h4>
             </div>
         </div>
     </div>
@@ -74,8 +87,10 @@
                 <div class="col-lg-6 col-12" >
                     <h4 class="text-center padding-bottom">Enter the value</h4>
                     <form class="center">
-                        <input type="text" name="name" placeholder="enter value here" class="inputfield" onclick="myfunction">
+                        <input type="text" name="name" placeholder="enter value here" id="paligndrmo" class="inputfield">
+                        <button id="myBtn" type="button" class="btn btn-primary">Submit</button>
                     </form>
+                   
                 </div>
                 <div class="col-lg-3 col-12" >
                     <h4 class="text-center"></h4>
