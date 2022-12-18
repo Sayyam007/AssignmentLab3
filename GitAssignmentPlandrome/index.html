@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Assigement 1</title>
+    <script>
+        $(document).ready(function() {
+            $('#rateMe1').mdbRate();
+        });
+    </script>
+    <style>
+        body{
+            padding: 2.5rem 1px;
+        }
+        .banner{
+            background:url(./images.jpg);
+            min-height: 400px;
+            background-position:center right;
+            background-size: cover;
+        }
+        h1{
+            font-size:5rem;
+            line-height: 1.6em;
+            color: antiquewhite;
+        }
+        .text-white{
+            color: aliceblue;        }
+        .left-padding{
+            /* padding-left: 20%; */
+            margin: auto;
+            padding:20px 20%
+        }
+        .inputfield
+        {
+            min-width: 100%;; 
+        }
+        .padding-top{
+            padding-top: 2rem;
+        }
+        .padding-bottom{
+            padding-bottom: 2rem;
+        }
+        .btn-black{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 12px 30px;
+        }
+        .text-center{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class= "row padding-top">
+        <div class="container banner">
+            <div class="col-lg-12 col-12" >
+                <h1 class="text-center padding-top">Assignment 3</h1>
+                <h4 class="text-center">Palandrome</h4>
+            </div>
+        </div>
+    </div>
+    <div class= "row padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12" >
+                    <h4 class="text-center"></h4>
+                </div>
+                <div class="col-lg-6 col-12" >
+                    <h4 class="text-center padding-bottom">Enter the value</h4>
+                    <form class="center">
+                        <input type="text" name="name" placeholder="enter value here" class="inputfield" onclick="myfunction">
+                    </form>
+                </div>
+                <div class="col-lg-3 col-12" >
+                    <h4 class="text-center"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>
